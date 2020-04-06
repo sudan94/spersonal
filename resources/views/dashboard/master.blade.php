@@ -138,7 +138,7 @@ position:absolute;
       <!-- Heading -->
       <div class="card mb-4 wow fadeIn">
 
-@include('dashboard.script')
+@include('script')
 @yield('content')
 </div>
     </div>
