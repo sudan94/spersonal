@@ -26,5 +26,20 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/logout','\App\Http\Controllers\Auth\LoginController@logout');
     Route::get('/resume','ResumeController@index')->name('resume');
     Route::post('/resume/insert','ResumeController@store');
-    
+    Route::get('/getresume','ResumeController@allResume');
+    Route::post('/resume/delete','ResumeController@destroy');
+    Route::post('/resume/edit','ResumeController@edit');
+    Route::post('/resume/update','ResumeController@update');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

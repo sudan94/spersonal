@@ -15,7 +15,33 @@ class ResumeController extends Controller
     public function index()
     {
         $resume = App\Resume::all();
-        return view('dashboard/resume')->with('resume',$resume);
+        return view('dashboard/resume')->with('resume', $resume);
+    }
+    public function allResume()
+    {
+        $resume = App\Resume::all();
+        $i = 1;
+        foreach ($resume as $res) {
+            if ($res->type == 0) {
+                $type = "Experiance";
+            } else {
+                $type = "Education";
+            }
+            $array[] = array(
+                "id" => $i,
+                "name" => $res->name,
+                "started" => $res->started,
+                "ended" => $res->ended,
+                "institution" => $res->institution,
+                "description" => $res->description,
+                "type" => $type,
+                "action" => "<a onclick='edit(".$res->id.")'><i class='fas fa-edit' style='color:green;'></i></a><a onclick='deleteresume(".$res->id.")'><i class='fas fa-trash' style='margin-left:15px; color:red;'></i></a>"
+            );
+            $i++;
+        }
+        $resume1 = array("data" => $array);
+
+        return json_encode($resume1);
     }
 
     /**
@@ -64,7 +90,6 @@ class ResumeController extends Controller
      */
     public function show($id)
     {
-
     }
 
     /**
@@ -73,9 +98,11 @@ class ResumeController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Request $request)
     {
-        //
+        $id = $request->Id;
+        $resume = App\Resume::find($id);
+        return json_encode($resume);
     }
 
     /**
@@ -85,9 +112,18 @@ class ResumeController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        //
+        $update = App\Resume::find($request->Id);
+        $update->name = $request->Name;
+        $update->started = $request->Started;
+        $update->ended = $request->Ended;
+        $update->institution = $request->Ins;
+        $update->description = $request->Des;
+        $update->type = $request->Type;
+        $update->save();
+        return "Update Sucessfull";
+
     }
 
     /**
@@ -96,8 +132,10 @@ class ResumeController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Request $request)
     {
-        //
+        $id = $request->Id;
+        $resume = App\Resume::find($id)->delete();
+        return "Delete Sucessfull";
     }
 }

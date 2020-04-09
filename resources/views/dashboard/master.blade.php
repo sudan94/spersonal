@@ -15,7 +15,8 @@
   <!-- Your custom styles (optional) -->
   <link href="dashboardApp/css/style.min.css" rel="stylesheet">
   {{-- Date picker --}}
-  <link rel="stylesheet" href="dashboardApp/css/jquery.datepicker2.css">
+  <link href="dashboardApp/css/jquery.datepicker2.css" rel="stylesheet">
+
   <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
 
   <style>
@@ -138,7 +139,7 @@ position:absolute;
       <!-- Heading -->
       <div class="card mb-4 wow fadeIn">
 
-@include('script')
+
 @yield('content')
 </div>
     </div>
@@ -209,13 +210,13 @@ position:absolute;
 
   </footer>
   <!--/.Footer-->
+@include('dashboard.footer')
 
-
-{{--  <script type="text/javascript">--}}
+<!-- {{--  <script type="text/javascript">--}}
 {{--    // Animations initialization--}}
 {{--    new WOW().init();--}}
 
-{{--  </script>--}}
+{{--  </script>--}} -->
 
   <!-- Charts -->
   <script>
