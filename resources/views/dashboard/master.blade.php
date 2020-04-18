@@ -5,35 +5,37 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Material Design Bootstrap</title>
+  <title>Sudan Dashboard</title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
   <!-- Bootstrap core CSS -->
-  <link href="dashboardApp/css/bootstrap.min.css" rel="stylesheet">
+  <link href="{{asset('dashboardApp/css/bootstrap.min.css') }}" rel="stylesheet">
   <!-- Material Design Bootstrap -->
-  <link href="dashboardApp/css/mdb.min.css" rel="stylesheet">
+  <link href="{{asset('dashboardApp/css/mdb.min.css')}}" rel="stylesheet">
   <!-- Your custom styles (optional) -->
-  <link href="dashboardApp/css/style.min.css" rel="stylesheet">
+  <link href="{{asset('dashboardApp/css/style.min.css')}}" rel="stylesheet">
   {{-- Date picker --}}
-  <link href="dashboardApp/css/jquery.datepicker2.css" rel="stylesheet">
+  <link href="{{asset('dashboardApp/css/jquery.datepicker2.css')}}" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+  <!-- summer note -->
+  <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.16/dist/summernote.min.css" rel="stylesheet">
 
   <style>
+    .map-container {
+      overflow: hidden;
+      padding-bottom: 56.25%;
+      position: relative;
+      height: 0;
+    }
 
-    .map-container{
-overflow:hidden;
-padding-bottom:56.25%;
-position:relative;
-height:0;
-}
-.map-container iframe{
-left:0;
-top:0;
-height:100%;
-width:100%;
-position:absolute;
-}
+    .map-container iframe {
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+    }
   </style>
 </head>
 
@@ -47,13 +49,12 @@ position:absolute;
       <div class="container-fluid">
 
         <!-- Brand -->
-        <a class="navbar-brand waves-effect" href="https://mdbootstrap.com/docs/jquery/" target="_blank">
-          <strong class="blue-text">MDB</strong>
+        <a class="navbar-brand waves-effect" href="/" target="_blank">
+          <strong class="blue-text">Website</strong>
         </a>
 
         <!-- Collapse -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <!-- Links -->
@@ -62,39 +63,39 @@ position:absolute;
           <!-- Left -->
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link waves-effect" href="#">Home
+              <a class="nav-link waves-effect" href="">
                 <span class="sr-only">(current)</span>
               </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link waves-effect" href="https://mdbootstrap.com/docs/jquery/" target="_blank">About
-                MDB</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link waves-effect" href="https://mdbootstrap.com/docs/jquery/getting-started/download/"
-                target="_blank">Free
-                download</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link waves-effect" href="https://mdbootstrap.com/education/bootstrap/" target="_blank">Free
-                tutorials</a>
             </li>
           </ul>
 
           <!-- Right -->
           <ul class="navbar-nav nav-flex-icons">
             <li class="nav-item">
-              <a href="https://www.facebook.com/mdbootstrap" class="nav-link waves-effect" target="_blank">
+              <a href="https://www.facebook.com/sudan.upadhaya.7" class="nav-link waves-effect" target="_blank">
                 <i class="fab fa-facebook-f"></i>
               </a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a href="https://twitter.com/MDBootstrap" class="nav-link waves-effect" target="_blank">
                 <i class="fab fa-twitter"></i>
               </a>
-            </li>
+            </li> -->
+            <!-- Basic dropdown -->
+            <div class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown link
+              </a>
+
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+            <!-- Basic dropdown -->
             <li class="nav-item">
-             <a href={{url('/logout')}}>Logout</a>
+              <a href={{url('/logout')}}>Logout</a>
             </li>
           </ul>
 
@@ -124,7 +125,11 @@ position:absolute;
         <a href="#" class="list-group-item list-group-item-action waves-effect">
           <i class="fas fa-money-bill-alt mr-3"></i>Orders</a>
         <a href="{{url('/resume')}}" class="list-group-item list-group-item-action waves-effect">
-            <i class="fas fa-book mr-3"></i>Resume</a>
+          <i class="fas fa-book mr-3"></i>Resume</a>
+        <a href="{{url('/skill')}}" class="list-group-item list-group-item-action waves-effect">
+          <i class="fas fa-tv mr-3"></i>Skills</a>
+        <a href="{{url('/blog')}}" class="list-group-item list-group-item-action waves-effect">
+          <i class="fas fa-tv mr-3"></i>Blog</a>
       </div>
 
     </div>
@@ -140,19 +145,18 @@ position:absolute;
       <div class="card mb-4 wow fadeIn">
 
 
-@yield('content')
-</div>
+        @yield('content')
+      </div>
     </div>
-</main>
-<!--Main layout-->
+  </main>
+  <!--Main layout-->
 
   <!--Footer-->
   <footer class="page-footer text-center font-small primary-color-dark darken-2 mt-4 wow fadeIn">
 
     <!--Call to action-->
     <div class="pt-4">
-      <a class="btn btn-outline-white" href="https://mdbootstrap.com/docs/jquery/getting-started/download/" target="_blank"
-        role="button">Download
+      <a class="btn btn-outline-white" href="https://mdbootstrap.com/docs/jquery/getting-started/download/" target="_blank" role="button">Download
         MDB
         <i class="fas fa-download ml-2"></i>
       </a>
@@ -210,9 +214,9 @@ position:absolute;
 
   </footer>
   <!--/.Footer-->
-@include('dashboard.footer')
+  @include('dashboard.footer')
 
-<!-- {{--  <script type="text/javascript">--}}
+  <!-- {{--  <script type="text/javascript">--}}
 {{--    // Animations initialization--}}
 {{--    new WOW().init();--}}
 
@@ -220,7 +224,6 @@ position:absolute;
 
   <!-- Charts -->
   <script>
-
     // Line
 
     var ctx = document.getElementById("myChart").getContext('2d');
@@ -364,7 +367,6 @@ position:absolute;
         responsive: true
       }
     });
-
   </script>
 
   <!--Google Maps-->
@@ -419,7 +421,6 @@ position:absolute;
         }
       }
     });
-
   </script>
 </body>
 

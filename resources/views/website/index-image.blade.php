@@ -128,7 +128,7 @@
 								</ul>
 
 								<!-- Sound wave -->
-								<a class="music-bg">
+								<!-- <a class="music-bg">
 									<div class="lines">
 										<span></span>
 										<span></span>
@@ -138,7 +138,7 @@
 										<span></span>
 									</div>
 									<p> Sound </p>
-								</a>
+								</a> -->
 							</nav>
 
 							<!-- Home Section -->
@@ -363,7 +363,8 @@
 											<div class="service box-2 mb-40">
 												<i class="fas fa-cogs"></i>
 												<h4>Web Development</h4>
-<p></p>											</div>
+												<p></p>
+											</div>
 										</div>
 
 										<!-- Service Item -->
@@ -371,7 +372,8 @@
 											<div class="service box-2 mb-40">
 												<i class="fas fa-mobile-alt"></i>
 												<h4>Responsive Design</h4>
-<p></p>											</div>
+												<p></p>
+											</div>
 										</div>
 
 										<!-- Service Item -->
