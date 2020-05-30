@@ -11,18 +11,16 @@
 |
 */
 
-Route::get('/', function () {
-    return view('website/index-image');
-});
+Route::get('/', 'WebsiteController@index');
+Route::get('/blog/{id}', 'WebsiteController@show');
+
+
 Route::get('/dashboard', function () {
     return view('dashboard/dashboard');
 })->middleware('auth');
 Route::get('/single', function () {
     return view('website/single-blog');
 });
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
 
 Route::middleware(['auth'])->group(function () {
     // resume start
@@ -55,20 +53,12 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/blog/edit/{id}','BlogController@edit');
     Route::post('/blog/update/','BlogController@update');
     // Blog end
+
+    // user start
+    Route::get('/user','UserController@index');
+    Route::post('/user/image','UserController@image');
+    //  user end
 });
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
 
 
 Auth::routes();

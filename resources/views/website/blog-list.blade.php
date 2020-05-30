@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     
-<!-- Mirrored from baha.malyarchuk.space/blog-list.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 28 Dec 2019 05:20:51 GMT -->
+
 <head>
 		
 		<!-- Meta -->
@@ -10,7 +10,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 		
 		<!-- Title -->
-		<title>Baha - Personal Portfolio Template</title>
+		<title>sudan - Personal Portfolio Template</title>
 
 		<!-- CSS Plugins -->
         <link rel="stylesheet" href="css/plugins/bootstrap.min.css">
@@ -87,7 +87,7 @@
 		
 		<div class="header-mobile">
         	<a class="header-toggle"><i class="fas fa-bars"></i></a>
-        	<h2>Baha</h2>
+        	<h2>sudan</h2>
         </div>
 			
 		<!-- Left Block -->
@@ -350,6 +350,4 @@
 		<script src="js/main-demo.js"></script>
         <script src="https://maps.google.com/maps/api/js?sensor=false"></script>
     </body>
-
-<!-- Mirrored from baha.malyarchuk.space/blog-list.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 28 Dec 2019 05:23:29 GMT -->
 </html>

@@ -116,9 +116,9 @@
 									<li data-tooltip="resume" data-position="top">
 										<a href="#resume" class="icon-r fas fa-address-book"></a>
 									</li>
-									<li data-tooltip="portfolio" data-position="top">
+									<!-- <li data-tooltip="portfolio" data-position="top">
 										<a href="#portfolio" class="icon-p fas fa-briefcase"></a>
-									</li>
+									</li> -->
 									<li data-tooltip="blog" data-position="top">
 										<a href="#blog" class="icon-b fas fa-receipt"></a>
 									</li>
@@ -151,8 +151,8 @@
 										<p class="cd-headline rotate-1">
 											<span>I am a</span>
 											<span class="cd-words-wrapper">
-												<b class="is-visible">Developer</b>
-												<b>Web Designer</b>
+												<b class="is-visible">Web Developer</b>
+												<!-- <b>Web Designer</b> -->
 												<b>Freelancer</b>
 											</span>
 										</p>
@@ -205,7 +205,7 @@
 														<div class="info-icon">
 															<i class="fas fa-award"></i>
 															<div class="desc-icon">
-																<h6>8 Years Job</h6>
+																<h6>2 Years Job</h6>
 																<p>Experience</p>
 															</div>
 														</div>
@@ -216,8 +216,10 @@
 														<div class="info-icon">
 															<i class="fas fa-certificate"></i>
 															<div class="desc-icon">
-																<h6>500+ Projects</h6>
-																<p>Completed</p>
+																<!-- <h6>500+ Projects</h6>
+																<p>Completed</p> -->
+																<h6>Web Developer</h6>
+
 															</div>
 														</div>
 													</div>
@@ -233,7 +235,7 @@
 														</div>
 													</div>
 													<div class="col-lg-3 col-sm-12 pt-50">
-														<a href="#" class="btn-st">Download CV</a>
+														<a href="{{URL::to('/')}}/download/sudan_cv.pdf" target="_blank" class="btn-st">Download CV</a>
 													</div>
 												</div>
 											</div>
@@ -381,25 +383,25 @@
 											<div class="service box-1 mb-40">
 												<i class="fas fa-medkit"></i>
 												<h4>quick Support</h4>
-												<p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
+												<p></p>
 											</div>
 										</div>
 									</div>
 
 									<!-- Testimonial Row Start -->
-									<div class="row testimonial mt-60">
+									<!-- <div class="row testimonial mt-60"> -->
 
-										<!-- Header Block -->
-										<div class="col-md-12">
+									<!-- Header Block -->
+									<!-- <div class="col-md-12">
 											<div class="header-box mb-50">
 												<h3>Testimonials</h3>
 											</div>
-										</div>
+										</div> -->
 
-										<div class="owl-carousel owl-theme">
+									<!-- <div class="owl-carousel owl-theme"> -->
 
-											<!-- Testimonail Item -->
-											<div class="testimonial-item">
+									<!-- Testimonail Item -->
+									<!-- <div class="testimonial-item">
 												<div class="media">
 													<img src="img/testimonials/testimonial-1.jpg" alt="">
 													<div class="content">
@@ -425,7 +427,7 @@
 											</div>
 
 											<!-- Testimonail Item -->
-											<div class="testimonial-item">
+									<!-- <div class="testimonial-item">
 												<div class="media">
 													<img src="img/testimonials/testimonial-2.jpg" alt="">
 													<div class="content">
@@ -448,10 +450,10 @@
 														temporureture.
 													</p>
 												</div>
-											</div>
+											</div> -->
 
-											<!-- Testimonail Item -->
-											<div class="testimonial-item">
+									<!-- Testimonail Item -->
+									<!-- <div class="testimonial-item">
 												<div class="media">
 													<img src="img/testimonials/testimonial-3.jpg" alt="">
 													<div class="content">
@@ -474,21 +476,21 @@
 													</p>
 												</div>
 											</div>
-										</div>
-									</div>
+										</div> -->
+									<!-- </div> -->
 
 									<!-- Price Row Start -->
-									<div class="row mt-100 mb-60">
+									<!-- <div class="row mt-100 mb-60"> -->
 
-										<!-- Header Block -->
-										<div class="col-md-12">
+									<!-- Header Block -->
+									<!-- <div class="col-md-12">
 											<div class="header-box mb-90">
 												<h3>Price</h3>
 											</div>
-										</div>
+										</div> -->
 
-										<!-- Price Item -->
-										<div class="col-lg-4 col-sm-12">
+									<!-- Price Item -->
+									<!-- <div class="col-lg-4 col-sm-12">
 											<div class="price box-1">
 												<div class="head-price">
 													<i class="fa fa-user"></i>
@@ -513,10 +515,10 @@
 													<a href="#" class="btn-st">Buy Now</a>
 												</div>
 											</div>
-										</div>
+										</div> -->
 
-										<!-- Price Item -->
-										<div class="col-lg-4 col-sm-12">
+									<!-- Price Item -->
+									<!-- <div class="col-lg-4 col-sm-12">
 											<div class="price box-2">
 												<div class="head-price">
 													<i class="fa fa-briefcase"></i>
@@ -541,10 +543,10 @@
 													<a href="#" class="btn-st">Buy Now</a>
 												</div>
 											</div>
-										</div>
+										</div> -->
 
-										<!-- Price Item -->
-										<div class="col-lg-4 col-sm-12">
+									<!-- Price Item -->
+									<!-- <div class="col-lg-4 col-sm-12">
 											<div class="price box-1">
 												<div class="head-price">
 													<i class="fa fa-globe"></i>
@@ -570,10 +572,9 @@
 												</div>
 											</div>
 										</div>
-									</div>
-								</section>
+									</div> -->
+									<!-- </section> -->
 							</div>
-
 							<!-- Resume Section -->
 							<div class="page pt-resume" data-simplebar>
 								<section class="container">
@@ -598,31 +599,16 @@
 											<div class="experience box-1">
 
 												<!-- Experience Item -->
-												<div class="item">
-													<div class="main">
-														<h4>Web Design</h4>
-														<p><i class="far fa-calendar-alt"></i>2012 - 2014 | Сompany Inc</p>
-													</div>
-													<p>Work experience is essential for getting a job. Whether it's a short work placement or a longer internship, work experience is always viewed favourably by employers and can help you decide your future career.</p>
-												</div>
 
-												<!-- Experience Item -->
+												@foreach($experiance as $exp)
 												<div class="item">
 													<div class="main">
-														<h4>Fornt-End Developer</h4>
-														<p><i class="far fa-calendar-alt"></i>2014 - 2015 | Сompany Inc</p>
+														<h4>{{$exp->name}}</h4>
+														<p><i class="far fa-calendar-alt"></i>{{$exp->started}} to {{$exp->ended}} | {{$exp->institution}}</p>
 													</div>
-													<p>Work experience is essential for getting a job. Whether it's a short work placement or a longer internship, work experience is always viewed favourably by employers and can help you decide your future career.</p>
+													<p>{{$exp->description}}</p>
 												</div>
-
-												<!-- Experience Item -->
-												<div class="item">
-													<div class="main">
-														<h4>Web Development</h4>
-														<p><i class="far fa-calendar-alt"></i>2015 - 2019 | Сompany Inc</p>
-													</div>
-													<p>Work experience is essential for getting a job. Whether it's a short work placement or a longer internship, work experience is always viewed favourably by employers and can help you decide your future career.</p>
-												</div>
+												@endforeach
 											</div>
 										</div>
 
@@ -637,31 +623,15 @@
 											<div class="experience box-2">
 
 												<!-- Education Item -->
+												@foreach($education as $educations)
 												<div class="item">
 													<div class="main">
-														<h4>Phd</h4>
-														<p><i class="far fa-calendar-alt"></i>2011 - 2013 | Computer Science</p>
+														<h4>{{$educations->name}}</h4>
+														<p><i class="far fa-calendar-alt"></i>{{$educations->started}} to {{$educations->ended}}| {{$educations->institution}}</p>
 													</div>
-													<p>Work experience is essential for getting a job. Whether it's a short work placement or a longer internship, work experience is always viewed favourably by employers and can help you decide your future career.</p>
+													<p>{{$educations->description}}</p>
 												</div>
-
-												<!-- Education Item -->
-												<div class="item">
-													<div class="main">
-														<h4>Post Graduation</h4>
-														<p><i class="far fa-calendar-alt"></i>2013 - 2016 | Computer Science</p>
-													</div>
-													<p>Work experience is essential for getting a job. Whether it's a short work placement or a longer internship, work experience is always viewed favourably by employers and can help you decide your future career.</p>
-												</div>
-
-												<!-- Education Item -->
-												<div class="item">
-													<div class="main">
-														<h4>Gradution</h4>
-														<p><i class="far fa-calendar-alt"></i>2016 - 2018 | Computer Science</p>
-													</div>
-													<p>Work experience is essential for getting a job. Whether it's a short work placement or a longer internship, work experience is always viewed favourably by employers and can help you decide your future career.</p>
-												</div>
+												@endforeach
 											</div>
 										</div>
 									</div>
@@ -682,111 +652,67 @@
 											<div class="col-lg-6 col-sm-6">
 
 												<!-- Skill Item -->
+												@foreach($skill as $skills)
 												<div class="skill-item">
-													<h4 class="progress-title">HTML5</h4>
+													<h4 class="progress-title">{{$skills->name}}</h4>
 													<div class="progress">
-														<div class="progress-bar" style="width:98%">
-															<div class="progress-value">98%</div>
+														<div class="progress-bar" style="width:<?php echo $skills->percentage . '%'; ?>">
+															<div class="progress-value">{{$skills->percentage}}%</div>
 														</div>
 													</div>
 												</div>
-
-												<!-- Skill Item -->
-												<div class="skill-item">
-													<h4 class="progress-title">CSS3</h4>
-													<div class="progress">
-														<div class="progress-bar" style="width:85%">
-															<div class="progress-value">85%</div>
-														</div>
-													</div>
-												</div>
-
-												<!-- Skill Item -->
-												<div class="skill-item">
-													<h4 class="progress-title">JavaScript</h4>
-													<div class="progress">
-														<div class="progress-bar" style="width:90%">
-															<div class="progress-value">90%</div>
-														</div>
-													</div>
-												</div>
-
-												<!-- Skill Item -->
-												<div class="skill-item">
-													<h4 class="progress-title">UI/UX designer</h4>
-													<div class="progress">
-														<div class="progress-bar" style="width:77%">
-															<div class="progress-value">77%</div>
-														</div>
-													</div>
-												</div>
+												@endforeach
 											</div>
 
 											<div class="col-lg-6 col-sm-6">
 												<div class="row">
 
 													<!-- Skill Item -->
+													@foreach($skill1 as $skill)
 													<div class="col-lg-6 col-sm-6">
-														<div class="chart" data-percent="80" data-bar-color="#fff"> 80% <p>PHP</p>
+														<div class="chart" data-percent="{{$skill->percentage}}" data-bar-color="#fff"> {{$skill->percentage}}% <p>{{$skills->name}}</p>
 														</div>
 													</div>
-
-													<!-- Skill Item -->
-													<div class="col-lg-6 col-sm-6">
-														<div class="chart" data-percent="70" data-bar-color="#fff"> 70% <p>Illustrator</p>
-														</div>
-													</div>
-
-													<!-- Skill Item -->
-													<div class="col-lg-6 col-sm-6">
-														<div class="chart" data-percent="60" data-bar-color="#fff"> 60% <p>Photoshop</p>
-														</div>
-													</div>
-
-													<!-- Skill Item -->
-													<div class="col-lg-6 col-sm-6">
-														<div class="chart" data-percent="90" data-bar-color="#fff"> 90% <p>AngularJS</p>
-														</div>
-													</div>
+													@endforeach
 												</div>
 											</div>
 										</div>
 									</div>
 
 									<!-- Work Process Row Start -->
-									<div class="row mt-100">
+									<!-- <div class="row mt-100"> -->
 
-										<!-- Header Block -->
-										<div class="col-md-12">
+									<!-- Header Block -->
+									<!-- <div class="col-md-12">
 											<div class="header-box mb-50">
 												<h3>My Working Process</h3>
 											</div>
 										</div>
-									</div>
+									</div> -->
 
-									<div class="box-2 work-process mb-100">
+									<!-- <div class="box-2 work-process mb-100">
 										<div class="row">
 											<div class="col-lg-4 col-sm-12 ltr">
 
 												<!-- Working Process Item-->
-												<div class="single-wp width-sm process-1">
+									<!-- <div class="single-wp width-sm process-1">
 													<p class="wp-step">01</p>
 													<h4 class="wp-title">Discuss idea</h4>
 													<p>I could describe these conceptions, also impress upon paper all that is living.</p>
-												</div>
+												</div> -->
 
-												<!-- Working Process Item-->
-												<div class="single-wp width-sm process-2">
+									<!-- Working Process Item-->
+									<!-- <div class="single-wp width-sm process-2">
 													<p class="wp-step">02</p>
 													<h4 class="wp-title">Creative concept</h4>
 													<p>I could describe these conceptions, also impress upon paper all that is living.</p>
 												</div>
 											</div>
 
-											<div class="col-lg-4 hidden-sm">
+											<div class="col-lg-4 hidden-sm"> -->
 
-												<!-- Working Process Circle-->
-												<div class="wp-circle">
+									<!-- Working Process Circle-->
+									<!-- <div class="wp-circle">
 													<h4>Working Process</h4>
 													<span class="dots top-l"></span>
 													<span class="dots bottom-l"></span>
@@ -795,39 +721,39 @@
 												</div>
 											</div>
 
-											<div class="col-lg-4 col-sm-12 rtl">
+											<div class="col-lg-4 col-sm-12 rtl"> -->
 
-												<!-- Working Process Item-->
-												<div class="single-wp width-sm process-3">
+									<!-- Working Process Item-->
+									<!-- <div class="single-wp width-sm process-3">
 													<p class="wp-step">03</p>
 													<h4 class="wp-title">Web concept</h4>
 													<p>I could describe these conceptions, also impress upon paper all that is living.</p>
-												</div>
+												</div> -->
 
-												<!-- Working Process Item-->
-												<div class="single-wp width-sm process-4">
+									<!-- Working Process Item-->
+									<!-- <div class="single-wp width-sm process-4">
 													<p class="wp-step">04</p>
 													<h4 class="wp-title">Final concept</h4>
 													<p>I could describe these conceptions, also impress upon paper all that is living.</p>
 												</div>
 											</div>
-										</div>
-									</div>
+										</div> -->
+									<!-- </div>  -->
 								</section>
 							</div>
 
 							<!-- Portfolio Section -->
-							<div class="page pt-portfolio" data-simplebar>
-								<section class="container">
+							<!-- <div class="page pt-portfolio" data-simplebar>
+								<section class="container"> -->
 
-									<!-- Section Title -->
-									<div class="header-page mt-70 mob-mt">
+							<!-- Section Title -->
+							<!-- <div class="header-page mt-70 mob-mt">
 										<h2>Portfolio</h2>
 										<span></span>
-									</div>
+									</div> -->
 
-									<!-- Portfolio Filter Row Start -->
-									<div class="row mt-100">
+							<!-- Portfolio Filter Row Start -->
+							<!-- <div class="row mt-100">
 										<div class="col-lg-12 col-sm-12 portfolio-filter">
 											<ul>
 												<li class="active" data-filter="*">All</li>
@@ -836,13 +762,13 @@
 												<li data-filter=".graphic">Graphic</li>
 											</ul>
 										</div>
-									</div>
+									</div> -->
 
-									<!-- Portfolio Item Row Start -->
-									<div class="row portfolio-items mt-100 mb-100">
+							<!-- Portfolio Item Row Start -->
+							<!-- <div class="row portfolio-items mt-100 mb-100"> -->
 
-										<!-- Portfolio Item -->
-										<div class="item col-lg-4 col-sm-6 graphic">
+							<!-- Portfolio Item -->
+							<!-- <div class="item col-lg-4 col-sm-6 graphic">
 											<figure>
 												<img alt="" src="img/portfolio/img-1.jpg">
 												<figcaption>
@@ -851,10 +777,10 @@
 													<a class="image-link" href="img/portfolio/img-1.jpg"></a>
 												</figcaption>
 											</figure>
-										</div>
+										</div> -->
 
-										<!-- Portfolio Item -->
-										<div class="item col-lg-4 col-sm-6 design">
+							<!-- Portfolio Item -->
+							<!-- <div class="item col-lg-4 col-sm-6 design">
 											<figure>
 												<img alt="" src="img/portfolio/img-2.jpg">
 												<figcaption>
@@ -863,10 +789,10 @@
 													<a class="image-link" href="img/portfolio/img-2.jpg"></a>
 												</figcaption>
 											</figure>
-										</div>
+										</div> -->
 
-										<!-- Portfolio Item -->
-										<div class="item col-lg-4 col-sm-6 brand">
+							<!-- Portfolio Item -->
+							<!-- <div class="item col-lg-4 col-sm-6 brand">
 											<figure>
 												<img alt="" src="img/portfolio/img-3.jpg">
 												<figcaption>
@@ -875,10 +801,10 @@
 													<a class="video-link" href="https://www.youtube.com/watch?v=k_okcNVZqqI"></a>
 												</figcaption>
 											</figure>
-										</div>
+										</div> -->
 
-										<!-- Portfolio Item -->
-										<div class="item col-lg-4 col-sm-6 graphic">
+							<!-- Portfolio Item -->
+							<!-- <div class="item col-lg-4 col-sm-6 graphic">
 											<figure>
 												<img alt="" src="img/portfolio/img-4.jpg">
 												<figcaption>
@@ -887,10 +813,10 @@
 													<a class="image-link" href="img/portfolio/img-4.jpg"></a>
 												</figcaption>
 											</figure>
-										</div>
+										</div> -->
 
-										<!-- Portfolio Item -->
-										<div class="item col-lg-4 col-sm-6 design">
+							<!-- Portfolio Item -->
+							<!-- <div class="item col-lg-4 col-sm-6 design">
 											<figure>
 												<img alt="" src="img/portfolio/img-5.jpg">
 												<figcaption>
@@ -899,10 +825,10 @@
 													<a class="video-link" href="https://www.youtube.com/watch?v=k_okcNVZqqI"></a>
 												</figcaption>
 											</figure>
-										</div>
+										</div> -->
 
-										<!-- Portfolio Item -->
-										<div class="item col-lg-4 col-sm-6 brand">
+							<!-- Portfolio Item -->
+							<!-- <div class="item col-lg-4 col-sm-6 brand">
 											<figure>
 												<img alt="" src="img/portfolio/img-6.jpg">
 												<figcaption>
@@ -911,10 +837,10 @@
 													<a class="image-link" href="img/portfolio/img-6.jpg"></a>
 												</figcaption>
 											</figure>
-										</div>
+										</div> -->
 
-										<!-- Portfolio Item -->
-										<div class="item col-lg-4 col-sm-6 graphic">
+							<!-- Portfolio Item -->
+							<!-- <div class="item col-lg-4 col-sm-6 graphic">
 											<figure>
 												<img alt="" src="img/portfolio/img-7.jpg">
 												<figcaption>
@@ -923,10 +849,10 @@
 													<a class="image-link" href="img/portfolio/img-7.jpg"></a>
 												</figcaption>
 											</figure>
-										</div>
+										</div> -->
 
-										<!-- Portfolio Item -->
-										<div class="item col-lg-4 col-sm-6 design">
+							<!-- Portfolio Item -->
+							<!-- <div class="item col-lg-4 col-sm-6 design">
 											<figure>
 												<img alt="" src="img/portfolio/img-8.jpg">
 												<figcaption>
@@ -935,10 +861,10 @@
 													<a class="image-link" href="img/portfolio/img-8.jpg"></a>
 												</figcaption>
 											</figure>
-										</div>
+										</div> -->
 
-										<!-- Portfolio Item -->
-										<div class="item col-lg-4 col-sm-6 brand">
+							<!-- Portfolio Item -->
+							<!-- <div class="item col-lg-4 col-sm-6 brand">
 											<figure>
 												<img alt="" src="img/portfolio/img-9.jpg">
 												<figcaption>
@@ -947,13 +873,13 @@
 													<a class="image-link" href="img/portfolio/img-9.jpg"></a>
 												</figcaption>
 											</figure>
-										</div>
-									</div>
+										</div> -->
+							<!-- </div>
 								</section>
-							</div>
+							</div> -->
 							<!-- Blog Section -->
 							<div class="page pt-blog" data-simplebar>
-								<section class="container">
+								<section class="container"> -->
 
 									<!-- Section Title -->
 									<div class="header-page mt-70 mob-mt">
@@ -965,110 +891,23 @@
 									<div class="row blog-masonry mt-100 mb-50">
 
 										<!-- Blog Item -->
+										@foreach($blog as $blogs)
 										<div class="col-lg-4 col-sm-6">
 											<div class="blog-item">
 												<div class="thumbnail">
 													<a href="single-blog.html"><img alt="" src="img/blog/img-1.jpg"></a>
 												</div>
-												<h4><a href="single-blog.html">Road to success</a></h4>
+												<h4><a href="single-blog.html">{{$blogs->title}}</a></h4>
 												<ul>
-													<li><a href="#">15 April 2019</a></li>
-													<li><a href="#">Lifestyle</a></li>
+													<li><a href="#">{{$blogs->date}}</a></li>
+													<li><a href="#">{{$blogs->category}}</a></li>
 												</ul>
 												<div class="blog-btn">
-													<a href="single-blog.html" class="btn-st">Read More</a>
+													<a href="/blog/{{$blogs->id}}" class="btn-st">Read More</a>
 												</div>
 											</div>
 										</div>
-
-										<!-- Blog Item -->
-										<div class="col-lg-4 col-sm-6">
-											<div class="blog-item">
-												<div class="thumbnail">
-													<a href="single-blog.html"><img alt="" src="img/blog/img-2.jpg"></a>
-													<a href="https://www.youtube.com/watch?v=k_okcNVZqqI" class="btn-play"></a>
-												</div>
-												<h4><a href="single-blog.html">Road to success</a></h4>
-												<ul>
-													<li><a href="#">10 March 2019</a></li>
-													<li><a href="#">Lifestyle</a></li>
-												</ul>
-												<div class="blog-btn">
-													<a href="single-blog.html" class="btn-st">Read More</a>
-												</div>
-											</div>
-										</div>
-
-										<!-- Blog Item -->
-										<div class="col-lg-4 col-sm-6">
-											<div class="blog-item">
-												<div class="thumbnail">
-													<a href="single-blog.html"><img alt="" src="img/blog/img-3.jpg"></a>
-												</div>
-												<h4><a href="single-blog.html">Road to success</a></h4>
-												<ul>
-													<li><a href="#">02 March 2019</a></li>
-													<li><a href="#">Work</a></li>
-												</ul>
-												<p>Tower Hamlets or mass or members of propaganda bananas real estate. However, a large and a mourning, vel euismod.</p>
-												<div class="blog-btn">
-													<a href="single-blog.html" class="btn-st">Read More</a>
-												</div>
-											</div>
-										</div>
-
-										<!-- Blog Item -->
-										<div class="col-lg-4 col-sm-6">
-											<div class="blog-item">
-												<div class="thumbnail">
-													<a href="single-blog.html"><img alt="" src="img/blog/img-4.jpg"></a>
-												</div>
-												<h4><a href="single-blog.html">Road to success</a></h4>
-												<ul>
-													<li><a href="#">29 March 2019</a></li>
-													<li><a href="#">Career</a></li>
-												</ul>
-												<div class="blog-btn">
-													<a href="single-blog.html" class="btn-st">Read More</a>
-												</div>
-											</div>
-										</div>
-
-										<!-- Blog Item -->
-										<div class="col-lg-4 col-sm-6">
-											<div class="blog-item">
-												<div class="thumbnail">
-													<a href="single-blog.html"><img alt="" src="img/blog/img-5.jpg"></a>
-												</div>
-												<h4><a href="single-blog.html">Road to success</a></h4>
-												<ul>
-													<li><a href="#">14 April 2019</a></li>
-													<li><a href="#">Lifestyle</a></li>
-												</ul>
-												<p>Tower Hamlets or mass or members of propaganda bananas real estate. However, a large and a mourning, vel euismod.</p>
-												<div class="blog-btn">
-													<a href="single-blog.html" class="btn-st">Read More</a>
-												</div>
-											</div>
-										</div>
-
-										<!-- Blog Item -->
-										<div class="col-lg-4 col-sm-6">
-											<div class="blog-item">
-												<div class="thumbnail">
-													<a href="single-blog.html"><img alt="" src="img/blog/img-6.jpg"></a>
-													<a href="https://www.youtube.com/watch?v=k_okcNVZqqI" class="btn-play"></a>
-												</div>
-												<h4><a href="single-blog.html">Road to success</a></h4>
-												<ul>
-													<li><a href="#">29 April 2019</a></li>
-													<li><a href="#">Career</a></li>
-												</ul>
-												<div class="blog-btn">
-													<a href="single-blog.html" class="btn-st">Read More</a>
-												</div>
-											</div>
-										</div>
+										@endforeach
 									</div>
 								</section>
 							</div>
@@ -1125,30 +964,30 @@
 										<div class="row">
 											<div class="col-lg-4 col-sm-12 info">
 												<i class="fas fa-paper-plane"></i>
-												<p>example@example.com</p>
+												<p>sudanupadhaya@gmail.com</p>
 												<span>Email</span>
 											</div>
 											<div class="col-lg-4 col-sm-12 info">
 												<i class="fas fa-map-marker-alt"></i>
-												<p>123 Lorem Ipsum, USA</p>
+												<p>Dharan, Nepal</p>
 												<span>Addres</span>
 											</div>
 											<div class="col-lg-4 col-sm-12 info">
 												<i class="fas fa-phone"></i>
-												<p>(+1) 123 456 7890</p>
+												<p>-------</p>
 												<span>Phone</span>
 											</div>
 										</div>
 									</div>
 
 									<!--Google Map Start-->
-									<div class="google-map box-1 mt-100 mb-100">
+									<!-- <div class="google-map box-1 mt-100 mb-100">
 										<div class="row">
 											<div class="col-lg-12">
 												<div id="map" data-latitude="40.712775" data-longitude="-74.005973" data-zoom="14"></div>
 											</div>
 										</div>
-									</div>
+									</div> -->
 								</section>
 							</div>
 

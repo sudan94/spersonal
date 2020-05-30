@@ -36,6 +36,14 @@
       width: 100%;
       position: absolute;
     }
+
+    .bg-custom-1 {
+      background-color: #85144b;
+    }
+
+    .bg-custom-2 {
+      background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    }
   </style>
 </head>
 
@@ -82,21 +90,24 @@
               </a>
             </li> -->
             <!-- Basic dropdown -->
-            <div class="dropdown">
-              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown link
-              </a>
-
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-4" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-list-4">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="{{asset('/uploads/user/'.Auth::user()->image.'')}}" width="40" height="40" class="rounded-circle">
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Dashboard</a>
+                    <a class="dropdown-item" href="#">Edit Profile</a>
+                    <a class="dropdown-item" href="{{url('/logout')}}">Log Out</a>
+                  </div>
+                </li>
+              </ul>
             </div>
             <!-- Basic dropdown -->
-            <li class="nav-item">
-              <a href={{url('/logout')}}>Logout</a>
-            </li>
           </ul>
 
         </div>
@@ -109,14 +120,14 @@
     <div class="sidebar-fixed position-fixed">
 
       <a class="logo-wrapper waves-effect">
-        <img src="https://mdbootstrap.com/img/logo/mdb-email.png" class="img-fluid" alt="">
+        <img src="" class="img-fluid" alt="Dashboard">
       </a>
 
       <div class="list-group list-group-flush">
         <a href="#" class="list-group-item active waves-effect">
           <i class="fas fa-chart-pie mr-3"></i>dashboardApp
         </a>
-        <a href="#" class="list-group-item list-group-item-action waves-effect">
+        <a href="{{url('/user')}}" class="list-group-item list-group-item-action waves-effect">
           <i class="fas fa-user mr-3"></i>Profile</a>
         <a href="#" class="list-group-item list-group-item-action waves-effect">
           <i class="fas fa-table mr-3"></i>Tables</a>
@@ -127,7 +138,7 @@
         <a href="{{url('/resume')}}" class="list-group-item list-group-item-action waves-effect">
           <i class="fas fa-book mr-3"></i>Resume</a>
         <a href="{{url('/skill')}}" class="list-group-item list-group-item-action waves-effect">
-          <i class="fas fa-tv mr-3"></i>Skills</a>
+          <i class="fas fa-pen mr-3"></i>Skills</a>
         <a href="{{url('/blog')}}" class="list-group-item list-group-item-action waves-effect">
           <i class="fas fa-tv mr-3"></i>Blog</a>
       </div>
@@ -225,7 +236,9 @@
   <!-- Charts -->
   <script>
     // Line
-
+    $(document).ready(function() {
+      $(".dropdown-toggle").dropdown();
+    });
     var ctx = document.getElementById("myChart").getContext('2d');
     var myChart = new Chart(ctx, {
       type: 'bar',

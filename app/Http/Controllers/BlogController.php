@@ -43,7 +43,7 @@ class BlogController extends Controller
             'description' => 'required'
         ]);
         $file = $request->file('image');
-        $destinationPath = "uploads";
+        $destinationPath = "uploads/";
         $imageName = $file->getClientOriginalName();
         $file->move($destinationPath, $file->getClientOriginalName());
         $blog = App\Blog::create([
@@ -90,7 +90,7 @@ class BlogController extends Controller
      */
     public function update(Request $request)
     {
-        dd($request->file('image'));
+        // dd($request->file('image'));
         if ($request->file('image') != NULL) {
             $file = $request->file('image');
             $destinationPath = "uploads";

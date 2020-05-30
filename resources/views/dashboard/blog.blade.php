@@ -169,7 +169,7 @@
                 "Id": id
             },
             success: function(data) {
-                $("#skillTable").DataTable().ajax.reload();
+                $("#blogTable").DataTable().ajax.reload();
             },
         });
     }
@@ -184,7 +184,7 @@
                     // "id": id
                 },
                 success: function(data) {
-                    $("#skillTable").DataTable().ajax.reload();
+                    $("#blogTable").DataTable().ajax.reload();
                 },
             });
         }
@@ -213,6 +213,7 @@
     }
 
     function updateBlog() {
+        $('#editModal').modal('hide');
         var title = $("#edit_title").val();
         var category = $("#edit_category").val();
         var file = $("#edit_image").val();
@@ -230,7 +231,7 @@
                 "des": description
             },
             success: function(data) {
-                $("#skillTable").DataTable().ajax.reload();
+                $("#blogTable").DataTable().ajax.reload();
             }
         });
     }
