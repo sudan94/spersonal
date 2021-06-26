@@ -26,3 +26,19 @@ Start the local development server
 
 php artisan serve
 You can now access the server at http://localhost:8000
+
+For registration 
+http://localhost:8000/register 
+
+Note: Only one time registration is possible
+can register other user after login for the first time
+can vhange the code in  RegisterController.php
+
+    public function __construct()
+    {
+        // only allows first time  registration
+        $user = User::all();
+        if (count($user) >= 1) {
+            $this->middleware('auth');
+        }
+    }
