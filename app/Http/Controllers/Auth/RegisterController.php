@@ -38,7 +38,11 @@ class RegisterController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        // only allows first time  registration
+        $user = User::all();
+        if (count($user) >= 1) {
+            $this->middleware('auth');
+        }
     }
 
     /**
